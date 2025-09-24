@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YousefDiv</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Yousef Abdelaziz</h1>
+      <h1>
+        <span class="fancy-name">Yousef</span>
+        <span class="fancy-name-alt">Abdelaziz</span>
+      </h1>
     </header>
     <section id="about">
       <h2>About Me</h2>
@@ -18,8 +25,9 @@
         class="profile-img"
       />
       <p>
-        My name is Yousef Abdelaziz. I am a software engineer studying at KFUPM.
-        I am aiming to be the best software developer in the world!
+        My name is <strong><em>Yousef Abdelaziz</em></strong> 👨‍💻. I am a
+        software engineer studying at KFUPM 🎓. I am aiming to be the best
+        software developer in the world! 🚀🌟
       </p>
     </section>
     <section id="projects">
@@ -27,6 +35,29 @@
       <div class="projects">
         <div class="project">
           <h3>KFUPM Events🗓️</h3>
+          <div class="tech-icons">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+              alt="Next.js"
+              title="Next.js"
+              width="24"
+              height="24"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+              alt="Django"
+              title="Django"
+              width="24"
+              height="24"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python/OCR"
+              title="Python/OCR"
+              width="24"
+              height="24"
+            />
+          </div>
           <p>
             a full-stack app to automate university event extraction from emails
             and posters using OCR, n8n, Next.js, and Django.
@@ -34,10 +65,33 @@
         </div>
         <div class="project">
           <h3>KFUPM Maps🗺️</h3>
+          <div class="tech-icons">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+              title="React"
+              width="24"
+              height="24"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+              title="Node.js"
+              width="24"
+              height="24"
+            />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB"
+              title="MongoDB"
+              width="24"
+              height="24"
+            />
+          </div>
           <p>
             a photo-based campus navigation app with student-contributed visual
-            routes and captions. Developed the backend in Node.js & MongoDB and
-            added route submission, approval, and upvoting features.
+            routes and captions. Implemented route submission, approval, and
+            upvoting features.
           </p>
         </div>
       </div>
@@ -57,4 +111,5 @@
       </form>
     </section>
   </body>
+  <script src="js/theme.js"></script>
 </html>

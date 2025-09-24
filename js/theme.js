@@ -46,7 +46,7 @@
 
   // Load theme from localStorage
   const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    setTheme("dark");
+  if (savedTheme) {
+    setTheme(savedTheme);
   }
 })();

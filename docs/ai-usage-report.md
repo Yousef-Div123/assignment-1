@@ -21,7 +21,7 @@
 
 ### Challenges
 
-I tried to implement dark/light mode using AI. However, the implementation was not done very well, especially in styling. This shows that AI is not always reliable, even for implementing a simple feature such as dark/light mode. In order to build a real project, a deep understanding of web programming concepts is essential.
+Ai added a lot of redundant code so I had to clean the code specially after i ask it to edit an existing feature.
 
 ## Learning Outcomes
 

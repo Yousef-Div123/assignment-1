@@ -37,12 +37,14 @@ assignment-1/
 - **Technology Icons**: Project sections use SVG icons from CDN for tech stack visualization.
 - **Accessibility**: Semantic HTML tags and alt attributes are used for better accessibility.
 
-## Extending the Project
+### Recent technical updates
 
-- Add more projects or sections by editing `index.html`.
-- Update styles in `css/styles.css` for custom themes.
-- Add new images to `assets/images/` as needed.
-- For backend integration, connect the contact form to a server or service.
+- CSS variables: Colors and gradients were centralized in `:root` variables in `css/styles.css` to make theming and palette tweaks easier.
+- Theme toggle improvements: the toggle swaps button background and icon color depending on theme for contrast; the icon is centered using flexbox. Preferences are saved in `localStorage`.
+- Typewriter greeting: `js/typewriter.js` implements a typewriter effect that types a greeting determined by local time (morning/afternoon/evening/night) and now applies a class to the `#greeting` section to control gradient styling.
+- Time-based gradients: multiple linear-gradient rules were added for `#greeting` variants (morning, afternoon, evening, night, late) and are driven by classes set in the JS.
+- Code hygiene: `js/theme.js` and `js/typewriter.js` include explanatory comments; assets were organized under `assets/images`.
+
 
 ## Troubleshooting
 

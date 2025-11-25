@@ -112,7 +112,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-button {
+.sendBtn {
   padding: 0.7rem;
   background: #333;
   color: #fff;
@@ -120,6 +120,97 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-button:hover {
+.sendBtn:hover {
   background: #444;
 }
+
+/* GitHub Repo Cards */
+.github-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.repo-card {
+  background: #fafafa;
+  padding: 1.2rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.repo-name {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.repo-desc {
+  margin: 0.5rem 0 1rem;
+  color: #555;
+}
+
+.repo-meta {
+  display: flex;
+  flex: 1 1 250px;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.2rem;
+}
+
+.repo-lang {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #e3e3e3;
+  font-size: 0.8rem;
+}
+
+.repo-btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: #333;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.repo-btn:hover {
+  background: #444;
+}
+
+/* Dark mode compatibility */
+.dark-mode .repo-card {
+  background: #222;
+  color: #e0e0e0;
+}
+.dark-mode .repo-name {
+  background: #222;
+  color: #e0e0e0;
+}
+.dark-mode .repo-desc {
+  background: #222;
+  color: #cfcfcf;
+}
+.dark-mode .repo-meta {
+  background: #222;
+  color: #cfcfcf;
+}
+
+.dark-mode .repo-lang {
+  background: #444;
+  color: #ffd700;
+}
+
+.dark-mode .repo-btn {
+  background: #ffd700;
+  color: #222;
+}
+
+.dark-mode .repo-btn:hover {
+  background: #e0e0e0;
+  color: #222;
+}
+

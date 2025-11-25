@@ -13,6 +13,7 @@ assignment-1/
 │   └── styles.css          # Site styles
 ├── js/
 │   └── theme.js            # Dark/light mode toggle
+│   └── github.js           # github fetching data
 ├── assets/
 │   └── images/
 │       └── me.jpeg         # Profile image
@@ -26,6 +27,7 @@ assignment-1/
 
 - **About Me Section**: Displays profile image and introduction.
 - **Projects Section**: Lists projects with technology icons and descriptions.
+- **Github Projects Section**: Lists latest github repos I worked on and filter them based on language used.
 - **Contact Section**: Simple contact form (no backend).
 - **Dark/Light Mode**: Toggle button for theme switching, with persistent user preference.
 - **Responsive Design**: Layout adapts to different screen sizes.

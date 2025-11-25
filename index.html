@@ -96,6 +96,20 @@
         </div>
       </div>
     </section>
+    <section id="github">
+      <h2>Latest GitHub Projects</h2>
+      <label for="language-filter">Filter by language:</label>
+      <select id="language-filter">
+        <option value="all">All</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="CSS">CSS</option>
+        <option value="C#">C#</option>
+        <option value="HTML">HTML</option>
+      </select>
+
+      <div id="github-container" class="github-container"></div>
+    </section>
     <section id="contact">
       <h2>Contact</h2>
       <form>
@@ -107,9 +121,10 @@
           placeholder="Message"
           required
         ></textarea>
-        <button type="submit">Send</button>
+        <button type="submit" class="sendBtn">Send</button>
       </form>
     </section>
   </body>
   <script src="js/theme.js"></script>
+  <script src="js/github.js" defer></script>
 </html>

@@ -10,7 +10,8 @@
       rel="stylesheet"
     />
     <script>
-      function formSubmit() {
+      function formSubmit(e) {
+        e.preventDefault();
         alert("Submitted successfully!");
       }
     </script>
@@ -120,7 +121,7 @@
     </section>
     <section id="contact">
       <h2>Contact</h2>
-      <form onsubmit="formSubmit()">
+      <form onsubmit="formSubmit(event)">
         <input type="text" name="name" placeholder="Name" required />
         <input type="email" name="email" placeholder="Email" required />
         <textarea

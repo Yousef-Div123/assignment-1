@@ -151,6 +151,7 @@ h1 {
 /* late: deep purple */
 #greeting.greet-late {
   background: linear-gradient(135deg, var(--g-late-1), var(--g-late-2));
+  color: var(--header-text)
 }
 /* morning: warm sunrise */
 #greeting.greet-morning {
@@ -173,6 +174,7 @@ h1 {
 /* night: dark navy */
 #greeting.greet-night {
   background: linear-gradient(135deg, var(--g-night-1), var(--g-night-2));
+  color: var(--header-text)
 }
 
 /* adjust typing cursor color for light backgrounds */

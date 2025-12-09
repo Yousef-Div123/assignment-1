@@ -14,7 +14,6 @@
   toggleBtn.style.zIndex = "1000";
   toggleBtn.style.background = "#222";
   toggleBtn.style.color = "#fff";
-  toggleBtn.style.border = "none";
   toggleBtn.style.borderRadius = "50%";
   toggleBtn.style.width = "40px";
   toggleBtn.style.height = "40px";

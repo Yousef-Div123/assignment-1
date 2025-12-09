@@ -13,6 +13,7 @@ This is a personal portfolio website for me, showcasing an introduction, feature
    - `index.html` (main site)
    - `css/styles.css` (styles)
    - `js/theme.js` (dark/light mode toggle)
+   - `js/github.js` (github fetching data and filtering)
    - `assets/images/me.jpeg` (profile image)
    - `docs/ai-usage-report.md` (AI usage documentation)
 
@@ -20,7 +21,7 @@ No backend or server setup is required. All features work client-side.
 
 ## AI Use Summary
 
-AI tools (GitHub Copilot and Copilot Chat) were used to:
+AI tools (GitHub Copilot, Copilot Chat and ChatGPT) were used to:
 
 - Generate initial HTML, CSS, and JavaScript code.
 - Suggest design improvements and UI features.

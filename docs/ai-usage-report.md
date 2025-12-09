@@ -43,7 +43,7 @@ Used extensively for:
 - **GitHub API filtering logic**: AI provided the base, but I had to adjust variable scopes, rendering logic, and event handling to get a clean solution
 - **Integrating AI code with my existing structure**: Sometimes AI-generated components didn't match my HTML layout or naming conventions, so manual adjustments were required
 
-**Overall, this reinforced that AI is a helper, not a replacement for real coding skills.**
+Ai added a lot of redundant code so I had to clean the code specially after i ask it to edit an existing feature.
 
 ## Learning Outcomes
 

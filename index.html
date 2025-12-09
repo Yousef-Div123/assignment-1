@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      function formSubmit() {
+        alert("Submitted successfully!");
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -17,6 +22,9 @@
         <span class="fancy-name-alt">Abdelaziz</span>
       </h1>
     </header>
+    <section id="greeting">
+      <h1>Good evening — welcome to my portfolio.</h1>
+    </section>
     <section id="about">
       <h2>About Me</h2>
       <img
@@ -112,7 +120,7 @@
     </section>
     <section id="contact">
       <h2>Contact</h2>
-      <form>
+      <form onsubmit="formSubmit()">
         <input type="text" name="name" placeholder="Name" required />
         <input type="email" name="email" placeholder="Email" required />
         <textarea
@@ -127,4 +135,5 @@
   </body>
   <script src="js/theme.js"></script>
   <script src="js/github.js" defer></script>
+  <script src="js/typewriter.js"></script>
 </html>

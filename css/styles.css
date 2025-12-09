@@ -1,50 +1,104 @@
+:root {
+  /* Core palette */
+  --page-bg: #f4f4f4;
+  --card-bg: #ffffff;
+  --heading: #333333;
+  --text: #222222;
+
+  /* Header */
+  --header-bg: #333333;
+  --header-text: #ffffff;
+
+  /* Accents */
+  --fancy-gold: #ffd700;
+  --fancy-blue: #00bfff;
+  --shadow-dark: #222222;
+
+  /* Placeholder / neutrals */
+  --profile-placeholder: #cccccc;
+  --input-border: #cccccc;
+  --project-bg: #fafafa;
+
+  /* Cursor colors */
+  --cursor-default: #333333;
+  --cursor-dark: #222222;
+
+  /* Gradients (pairs) */
+  --g-late-1: #2b0036;
+  --g-late-2: #4b0066;
+  --g-morning-1: #ff9a9e;
+  --g-morning-2: #fecfef;
+  --g-morning-text: #2a0a2a;
+  --g-afternoon-1: #a1c4fd;
+  --g-afternoon-2: #c2e9fb;
+  --g-afternoon-text: #0b2a44;
+  --g-evening-1: #ff9966;
+  --g-evening-2: #ff5e62;
+  --g-night-1: #010826;
+  --g-night-2: #05204a;
+
+  /* Dark mode overrides */
+  --dark-page-bg: #181818;
+  --dark-text: #e0e0e0;
+  --dark-header-bg: #222222;
+  --dark-accent: #ffd700;
+  --dark-section-bg: #232323;
+  --dark-project-bg: #222222;
+  --dark-profile-bg: #444444;
+  --dark-input-bg: #222222;
+  --dark-border: #555555;
+  --dark-button-bg: #ffd700;
+  --dark-button-text: #222222;
+  --dark-button-hover: #e0e0e0;
+}
+
 body {
   font-family: "Inter", "Roboto", "Poppins", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  background: var(--page-bg);
 }
 /* Dark mode styles */
 .dark-mode body {
-  background: #181818;
-  color: #e0e0e0;
+  background: var(--dark-page-bg);
+  color: var(--dark-text);
 }
 .dark-mode header {
-  background: #222;
-  color: #ffd700;
+  background: var(--dark-header-bg);
+  color: var(--dark-accent);
 }
 .dark-mode section {
-  background: #232323;
+  background: var(--dark-section-bg);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 .dark-mode h2 {
-  color: #ffd700;
+  color: var(--dark-accent);
 }
 .dark-mode .project {
-  background: #222;
-  color: #e0e0e0;
+  background: var(--dark-project-bg);
+  color: var(--dark-text);
 }
 .dark-mode .profile-img {
-  background: #444;
+  background: var(--dark-profile-bg);
 }
 .dark-mode input,
 .dark-mode textarea {
-  background: #222;
-  color: #ffd700;
-  border: 1px solid #555;
+  background: var(--dark-input-bg);
+  color: var(--dark-accent);
+  border: 1px solid var(--dark-border);
 }
 .dark-mode button {
-  background: #ffd700;
-  color: #222;
+  background: var(--dark-button-bg);
+  color: var(--dark-button-text);
 }
 .dark-mode button:hover {
-  background: #e0e0e0;
-  color: #222;
+  background: var(--dark-button-hover);
+  color: var(--dark-button-text);
 }
 
 header {
-  background: #333;
-  color: #fff;
+  background: var(--header-bg);
+  color: var(--header-text);
   padding: 1.5rem 0;
   text-align: center;
 }
@@ -55,21 +109,80 @@ h1 {
 .fancy-name {
   font-family: "Segoe Script", "Brush Script MT", cursive;
   font-size: 2.5rem;
-  color: #ffd700;
+  color: var(--fancy-gold);
   letter-spacing: 2px;
-  text-shadow: 1px 1px 6px #222;
+  text-shadow: 1px 1px 6px var(--shadow-dark);
 }
 .fancy-name-alt {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
-  color: #00bfff;
+  color: var(--fancy-blue);
   letter-spacing: 1px;
-  text-shadow: 1px 1px 6px #222;
+  text-shadow: 1px 1px 6px var(--shadow-dark);
+}
+
+/* Typing cursor and reveal behavior for greeting */
+#greeting h1 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0.5rem 0 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#greeting h1::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 1.25rem;
+  margin-left: 6px;
+  background: var(--cursor-default);
+  vertical-align: middle;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* late: deep purple */
+#greeting.greet-late {
+  background: linear-gradient(135deg, var(--g-late-1), var(--g-late-2));
+}
+/* morning: warm sunrise */
+#greeting.greet-morning {
+  background: linear-gradient(135deg, var(--g-morning-1), var(--g-morning-2));
+  color: var(--g-morning-text);
+}
+/* afternoon: bright and clear */
+#greeting.greet-afternoon {
+  background: linear-gradient(
+    135deg,
+    var(--g-afternoon-1),
+    var(--g-afternoon-2)
+  );
+  color: var(--g-afternoon-text);
+}
+/* evening: warm orange */
+#greeting.greet-evening {
+  background: linear-gradient(135deg, var(--g-evening-1), var(--g-evening-2));
+}
+/* night: dark navy */
+#greeting.greet-night {
+  background: linear-gradient(135deg, var(--g-night-1), var(--g-night-2));
+}
+
+/* adjust typing cursor color for light backgrounds */
+#greeting.greet-morning h1::after,
+#greeting.greet-afternoon h1::after {
+  background: var(--cursor-dark);
 }
 
 section {
-  background: #fff;
+  background: var(--card-bg);
   margin: 2rem auto;
   padding: 2rem;
   max-width: 700px;
@@ -77,14 +190,14 @@ section {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 h2 {
-  color: #333;
+  color: var(--heading);
   margin-top: 0;
 }
 .profile-img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: #ccc;
+  background: var(--profile-placeholder);
   display: block;
   margin: 0 auto 1rem;
 }
@@ -95,7 +208,7 @@ h2 {
 }
 .project {
   flex: 1 1 250px;
-  background: #fafafa;
+  background: var(--project-bg);
   border-radius: 6px;
   padding: 1rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
@@ -109,13 +222,13 @@ form {
 input,
 textarea {
   padding: 0.7rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border);
   border-radius: 4px;
 }
 .sendBtn {
   padding: 0.7rem;
-  background: #333;
-  color: #fff;
+  background: var(--header-bg);
+  color: var(--header-text);
   border: none;
   border-radius: 4px;
   cursor: pointer;
